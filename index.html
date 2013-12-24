@@ -1,1 +1,94 @@
-My Page
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Polybox by emilebosch</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Polybox</h1>
+        <p>A polyglot hacker's sandbox - Docker based dev environments in minutes.</p>
+        <p class="view"><a href="https://github.com/emilebosch/polybox">View the Project on GitHub <small>emilebosch/polybox</small></a></p>
+        <ul>
+          <li><a href="https://github.com/emilebosch/polybox/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/emilebosch/polybox/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/emilebosch/polybox">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="polybox---a-docker-based-polyglot-hackers-sandbox" class="anchor" href="#polybox---a-docker-based-polyglot-hackers-sandbox"><span class="octicon octicon-link"></span></a>Polybox - a docker based polyglot hacker's sandbox</h1>
+
+<h2>
+<a name="purpose" class="anchor" href="#purpose"><span class="octicon octicon-link"></span></a>Purpose</h2>
+
+<p>The aim of this project is to make it as easy to hack and explore other programming languages and environments without going trough the hastle of installing them. </p>
+
+<p>With polybox you are able to quickly setup a rails, go or nodejs environment and start hacking.</p>
+
+<h2>
+<a name="how-to-install-osx" class="anchor" href="#how-to-install-osx"><span class="octicon octicon-link"></span></a>How to install (OSX)</h2>
+
+<p>Make sure you've installed vagrant.</p>
+
+<p>Clone and cd into the repo:</p>
+
+<pre><code>git clone https://github.com/emilebosch/polybox.git &amp;&amp; cd polybox
+</code></pre>
+
+<h2>
+<a name="how-to-run-a-polybox" class="anchor" href="#how-to-run-a-polybox"><span class="octicon octicon-link"></span></a>How to run a polybox</h2>
+
+<p>To run a polybox use the <code>./pb</code> shell command:</p>
+
+<pre><code>./pb [box-to-run]
+</code></pre>
+
+<p>For instance:</p>
+
+<pre><code>./pb rails4
+</code></pre>
+
+<p>This will create a directory in <code>./src/rails4</code> for your code, pulls and runs rails polybox container and mount the <code>./src/rails4</code> directory in your polybox container under <code>/src</code></p>
+
+<p>This is a trowaway container. As long as your development code is stored in <code>/src</code> within the polybox, it will be remounted during new polybox sessions and your code is safe.</p>
+
+<h2>
+<a name="how-to-donate-a-polybox" class="anchor" href="#how-to-donate-a-polybox"><span class="octicon octicon-link"></span></a>How to donate a polybox!</h2>
+
+<p><strong>PLEASE</strong> Add your favourite dev environment!</p>
+
+<ul>
+<li>Fork this project &amp; branch</li>
+<li>Create a docker image (keep it small please) and push it to a public repo</li>
+<li>Add a polybox file in the <code>./boxes</code> directory, see the current <code>./boxes/rails4</code> as an example.</li>
+</ul><h3>
+<a name="wishlist-boxes" class="anchor" href="#wishlist-boxes"><span class="octicon octicon-link"></span></a>Wishlist boxes</h3>
+
+<ul>
+<li>Nodejs</li>
+<li>Go</li>
+<li>Haskell</li>
+<li>Scala</li>
+</ul>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/emilebosch">emilebosch</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
