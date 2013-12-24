@@ -19,11 +19,11 @@ Run `vagrant up` to start the virtual machine with docker provisioner.
 
 ## How to run a polybox
 
-After starting your vagrant you can use the command `./pb` to start your polybox. 
+After starting your vagrant you can use the command `./pb <box-to-run>` to start your polybox. 
 
-For instance: `./pb rails`,
+For instance: `./pb rails`. This will create a directory in `./src/rails` for your code, pulls and runs rails polybox container and mount the `./src/rails` directory in your polybox container under `/src`
 
-This is a trowaway container. As long as your development code is stored in `/src` within the polybox it will be remounted during new polybox sessions and your code is safe.
+This is a trowaway container. As long as your development code is stored in `/src` within the polybox, it will be remounted during new polybox sessions and your code is safe.
 
 ## How to donate a polybox (we need your favourite dev environments!)
 
@@ -36,3 +36,4 @@ This is a trowaway container. As long as your development code is stored in `/sr
 - Nodejs
 - Go
 - Haskell
+- Scala
