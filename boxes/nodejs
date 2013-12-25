@@ -1,0 +1,2 @@
+mkdir -p src/nodejs
+vagrant ssh -c 'docker run -v /src/nodejs:/src -i -t -w /src/ ddwddw/nodejs /bin/bash'
