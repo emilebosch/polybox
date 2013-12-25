@@ -35,7 +35,7 @@ When you `pb` the following happends:
 - Pulls the container
 - Mounts the container and shares the source directory and runs the container
 
-## Keeping your code save
+## Keeping your code safe and awesome
 
 Polybox uses a standard run docker, trowaway container. As long as your development code is stored in `/src` within the polybox, it will be remounted during new polybox sessions and your code is safe.
 
