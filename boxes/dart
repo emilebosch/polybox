@@ -1,0 +1,2 @@
+mkdir -p src/dart
+vagrant ssh -c 'docker run -v /src/dart:/src -i -t -w /src/ sethladd/docker-dart /bin/bash'

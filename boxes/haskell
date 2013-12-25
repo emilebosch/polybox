@@ -1,0 +1,2 @@
+mkdir -p src/haskell
+vagrant ssh -c 'docker run -v /src/haskell:/src -i -t -w /src/ nlamirault/haskell /bin/bash'
