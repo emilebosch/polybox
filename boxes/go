@@ -1,0 +1,2 @@
+mkdir -p src/go
+vagrant ssh -c 'docker run -v /src/go:/src -i -t -w /src/ nlamirault/go /bin/bash'

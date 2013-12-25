@@ -1,0 +1,2 @@
+mkdir -p src/django
+vagrant ssh -c 'docker run -v /src/django:/src -i -t -w /src/ khanio/precise-nginx-django /bin/bash'
