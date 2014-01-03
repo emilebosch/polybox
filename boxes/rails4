@@ -1,2 +1,2 @@
 mkdir -p src/rails4
-vagrant ssh -c 'docker run -v /src/rails4:/src -i -t -w /src/ quay.io/emilebosch/rails-base /bin/bash'
+vagrant ssh -c 'docker run -p 3000:3000 -v /src/rails4:/src -i -t -w /src/ quay.io/emilebosch/polybox-rails /app/boot'

@@ -24,6 +24,17 @@ Wait for the polybox to load and start writing your code under `/src/` in your n
 shared with your host computer under `src/rails` so you can still edit with your
 favourite editor, such as sublime.
 
+You can now create a new rails app (mysql is preinstalled):
+
+```
+rails new myapp -d mysql
+cd myapp
+rake db:create
+rails s
+```
+
+Since port 3000 is default forwarded from vagrant with the host you should be able to just navigate to: `http://localhost:3000`
+
 ## How polybox works
 
 Polybox is a delicious vagrant, docker combination. It basically creates a vagrant virtual machine, installs
